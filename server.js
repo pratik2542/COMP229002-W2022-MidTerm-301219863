@@ -5,7 +5,7 @@
  */
 
 var app = require('./config/app');
-var debug = require('debug')('comp229midterm:server');
+var debug = require('debug')('Mid:server');
 var http = require('http');
 
 /**

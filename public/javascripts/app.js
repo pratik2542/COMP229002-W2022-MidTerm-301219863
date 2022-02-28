@@ -1,6 +1,6 @@
 console.log('Goes to the client side.');
 
-if(getTitle == "Movie List")
+if(getTitle == "Favourite Movies List")
 {
     let deleteButtons = document.querySelectorAll('.btn-danger');
         

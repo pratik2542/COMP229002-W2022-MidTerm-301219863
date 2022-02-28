@@ -3,15 +3,15 @@
   <!-- Main Content -->
   <main class="container">
     <div class="row">
-        <h1><%= title %></h1>
+        <h1 class="text-center" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><%= title %></h1>
         <br>
         <div>
             <!-- ------------------------ -->
             <!-- Fix the ADD button below -->
             <!-- ------------------------ -->
-            <a href="#" class="btn btn-primary align-self-end" role="button">
+            <a href="/movie/add" class="btn btn-primary align-self-end" role="button" style="margin-top : 20px; margin-bottom : 10px;"> 
                 <i class="fas fa-plus-circle"></i> 
-                Add a new Item
+                 New Movie
             </a>                
         </div>
 
@@ -45,15 +45,17 @@
                             <!-- ------------------------- -->
                             <!-- Fix the EDIT button below -->
                             <!-- ------------------------ -->
-                            <a href="#" class="btn btn-primary btn-sm">
-                            <i class="fas fa-pencil-alt"></i></a>
+                            <a href="/movie/edit/<%= movies[count]._id %>"
+                                 class="btn btn-primary btn-sm">
+                            <i class="fas fa-pencil-alt"></i>Edit</a>
                         </td>
                         <td class="text-center">
                             <!-- --------------------------- -->
                             <!-- Fix the DELETE button below -->
                             <!-- --------------------------- -->
-                            <a href="#" class="btn btn-danger btn-sm">
-                            <i class="fas fa-trash-alt"></i></a>
+                            <a href="/movie/delete/<%= movies[count]._id %>"
+                                 class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash-alt"></i>Delete</a>
                         </td>
                     </tr>
                 <% } %>
