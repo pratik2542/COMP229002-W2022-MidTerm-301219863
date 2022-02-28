@@ -1,5 +1,5 @@
 /*
-File Name - inventory.js
+File Name - movie.js
 Student Name - Pratiksinh Makwana
 Student ID - 301219863
 Date - 28-02-2022

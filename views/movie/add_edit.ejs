@@ -1,3 +1,11 @@
+<!--
+File Name - add_edit.ejs
+Student Name - Pratiksinh Makwana
+Student ID - 301219863
+Date - 28-02-2022
+-->
+
+
 <%- include ../partials/header.ejs %>
 
 <!-- Content for the Add_Edit page -->
@@ -11,7 +19,8 @@
                     <input type="hidden"
                         name="id"
                         value="<%= movie._id %>"
-                    >
+                    />
+                
                     <label for="movieTextField">Title</label>
                     <input type="text" class="form-control"
                         id="movieTextField"
@@ -19,6 +28,7 @@
                         name="Title" 
                         value="<%= movie.Title %>"
                         required>
+                        
                 </div>
                 <br />
                 <div class="form-group">
@@ -28,7 +38,7 @@
                         placeholder="Enter the Synopsis"
                         name="Synopsis" 
                         value="<%= movie.Synopsis %>"
-                        required>
+                        required >
                 </div>
                 <br />
                 <div class="form-group">
@@ -38,7 +48,7 @@
                     placeholder="00"
                     name="Year" 
                     value="<%= movie.Year %>"
-                    >
+                   required >
                 </div>
                 <br />
                 <div class="form-group">
